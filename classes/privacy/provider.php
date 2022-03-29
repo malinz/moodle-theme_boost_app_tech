@@ -15,21 +15,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Privacy Subsystem implementation for theme_boost_app_tech.
+ * Privacy Subsystem implementation for theme_boost_eng_app_tech.
  *
- * @package    theme_boost_app_tech
+ * @package    theme_boost_eng_app_tech
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_boost_app_tech\privacy;
+namespace theme_boost_eng_app_tech\privacy;
 
 use \core_privacy\local\metadata\collection;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * The boost_app_tech theme stores a user preference data.
+ * The boost_eng_app_tech theme stores a user preference data.
  *
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -63,12 +63,12 @@ class provider implements
         $draweropennavpref = get_user_preferences(self::DRAWER_OPEN_NAV, null, $userid);
 
         if (isset($draweropennavpref)) {
-            $preferencestring = get_string('privacy:drawernavclosed', 'theme_boost_app_tech');
+            $preferencestring = get_string('privacy:drawernavclosed', 'theme_boost_eng_app_tech');
             if ($draweropennavpref == 'true') {
-                $preferencestring = get_string('privacy:drawernavopen', 'theme_boost_app_tech');
+                $preferencestring = get_string('privacy:drawernavopen', 'theme_boost_eng_app_tech');
             }
             \core_privacy\local\request\writer::export_user_preference(
-                'theme_boost_app_tech',
+                'theme_boost_eng_app_tech',
                 self::DRAWER_OPEN_NAV,
                 $draweropennavpref,
                 $preferencestring

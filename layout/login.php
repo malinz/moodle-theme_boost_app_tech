@@ -17,9 +17,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * A login page layout for the boost_app_tech theme.
+ * A login page layout for the boost_eng_app_tech theme.
  *
- * @package   theme_boost_app_tech
+ * @package   theme_boost_eng_app_tech
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,5 +32,5 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes
 ];
 
-echo $OUTPUT->render_from_template('theme_boost_app_tech/login', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost_eng_app_tech/login', $templatecontext);
 

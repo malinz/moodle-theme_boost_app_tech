@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   theme_boost_app_tech
+ * @package   theme_boost_eng_app_tech
  * @copyright 2016 Ryan Wyllie
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -23,18 +23,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
-    $settings = new theme_boost_app_tech_admin_settingspage_tabs('themesettingboost_app_tech', get_string('configtitle', 'theme_boost_app_tech'));
-    $page = new admin_settingpage('theme_boost_app_tech_general', get_string('generalsettings', 'theme_boost_app_tech'));
+    $settings = new theme_boost_eng_app_tech_admin_settingspage_tabs('themesettingboost_eng_app_tech', get_string('configtitle', 'theme_boost_eng_app_tech'));
+    $page = new admin_settingpage('theme_boost_eng_app_tech_general', get_string('generalsettings', 'theme_boost_eng_app_tech'));
 
     // Preset.
-    $name = 'theme_boost_app_tech/preset';
-    $title = get_string('preset', 'theme_boost_app_tech');
-    $description = get_string('preset_desc', 'theme_boost_app_tech');
+    $name = 'theme_boost_eng_app_tech/preset';
+    $title = get_string('preset', 'theme_boost_eng_app_tech');
+    $description = get_string('preset_desc', 'theme_boost_eng_app_tech');
     $default = 'default.scss';
 
     $context = context_system::instance();
     $fs = get_file_storage();
-    $files = $fs->get_area_files($context->id, 'theme_boost_app_tech', 'preset', 0, 'itemid, filepath, filename', false);
+    $files = $fs->get_area_files($context->id, 'theme_boost_eng_app_tech', 'preset', 0, 'itemid, filepath, filename', false);
 
     $choices = [];
     foreach ($files as $file) {
@@ -58,32 +58,32 @@ if ($ADMIN->fulltree) {
     $choices['swift.scss'] = 'swift.scss';
     $choices['plain.scss'] = 'plain.scss';
 
-    $setting = new admin_setting_configthemepreset($name, $title, $description, $default, $choices, 'boost_app_tech');
+    $setting = new admin_setting_configthemepreset($name, $title, $description, $default, $choices, 'boost_eng_app_tech');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Preset files setting.
-    $name = 'theme_boost_app_tech/presetfiles';
-    $title = get_string('presetfiles','theme_boost_app_tech');
-    $description = get_string('presetfiles_desc', 'theme_boost_app_tech');
+    $name = 'theme_boost_eng_app_tech/presetfiles';
+    $title = get_string('presetfiles','theme_boost_eng_app_tech');
+    $description = get_string('presetfiles_desc', 'theme_boost_eng_app_tech');
 
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
         array('maxfiles' => 20, 'accepted_types' => array('.scss')));
     $page->add($setting);
 
     // Background image setting.
-    $name = 'theme_boost_app_tech/backgroundimage';
-    $title = get_string('backgroundimage', 'theme_boost_app_tech');
-    $description = get_string('backgroundimage_desc', 'theme_boost_app_tech');
+    $name = 'theme_boost_eng_app_tech/backgroundimage';
+    $title = get_string('backgroundimage', 'theme_boost_eng_app_tech');
+    $description = get_string('backgroundimage_desc', 'theme_boost_eng_app_tech');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'backgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Variable $body-color.
     // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_boost_app_tech/brandcolor';
-    $title = get_string('brandcolor', 'theme_boost_app_tech');
-    $description = get_string('brandcolor_desc', 'theme_boost_app_tech');
+    $name = 'theme_boost_eng_app_tech/brandcolor';
+    $title = get_string('brandcolor', 'theme_boost_eng_app_tech');
+    $description = get_string('brandcolor_desc', 'theme_boost_eng_app_tech');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -92,17 +92,17 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
     // Advanced settings.
-    $page = new admin_settingpage('theme_boost_app_tech_advanced', get_string('advancedsettings', 'theme_boost_app_tech'));
+    $page = new admin_settingpage('theme_boost_eng_app_tech_advanced', get_string('advancedsettings', 'theme_boost_eng_app_tech'));
 
     // Raw SCSS to include before the content.
-    $setting = new admin_setting_scsscode('theme_boost_app_tech/scsspre',
-        get_string('rawscsspre', 'theme_boost_app_tech'), get_string('rawscsspre_desc', 'theme_boost_app_tech'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode('theme_boost_eng_app_tech/scsspre',
+        get_string('rawscsspre', 'theme_boost_eng_app_tech'), get_string('rawscsspre_desc', 'theme_boost_eng_app_tech'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Raw SCSS to include after the content.
-    $setting = new admin_setting_scsscode('theme_boost_app_tech/scss', get_string('rawscss', 'theme_boost_app_tech'),
-        get_string('rawscss_desc', 'theme_boost_app_tech'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode('theme_boost_eng_app_tech/scss', get_string('rawscss', 'theme_boost_eng_app_tech'),
+        get_string('rawscss_desc', 'theme_boost_eng_app_tech'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

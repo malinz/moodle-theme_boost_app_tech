@@ -15,15 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * boost_app_tech.
+ * boost_eng_app_tech.
  *
- * @package    theme_boost_app_tech
+ * @package    theme_boost_eng_app_tech
  * @copyright  2016 Frédéric Massart
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020061500;
-$plugin->requires  = 2020060900;
-$plugin->component = 'theme_boost_app_tech';
+$plugin->version   = 2021051700;
+$plugin->requires  = 2021051100;
+$plugin->component = 'theme_boost_eng_app_tech';

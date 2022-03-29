@@ -1,6 +1,6 @@
-@javascript @theme_boost_app_tech
+@javascript @theme_boost_eng_app_tech
 Feature: Region main settings menu
-  To navigate in boost_app_tech theme I need to use the region main settings menu
+  To navigate in boost_eng_app_tech theme I need to use the region main settings menu
 
   Background:
     Given the following "courses" exist:

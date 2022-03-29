@@ -15,9 +15,9 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost_app_tech/columns1
+    @template theme_boost_eng_app_tech/columns1
 
-    boost_app_tech 1 column layout template.
+    boost_eng_app_tech 1 column layout template.
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -36,7 +36,7 @@
          "bodyattributes":""
     }
 }}
-{{> theme_boost_app_tech/head }}
+{{> theme_boost_eng_app_tech/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -65,8 +65,8 @@
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost_app_tech/loader');
-require(['theme_boost_app_tech/loader'], function() {
-    M.util.js_complete('theme_boost_app_tech/loader');
+M.util.js_pending('theme_boost_eng_app_tech/loader');
+require(['theme_boost_eng_app_tech/loader'], function() {
+    M.util.js_complete('theme_boost_eng_app_tech/loader');
 });
 {{/js}}

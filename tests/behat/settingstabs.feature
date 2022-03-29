@@ -1,4 +1,4 @@
-@javascript @theme_boost_app_tech
+@javascript @theme_boost_eng_app_tech
 Feature: Administration nav tabs back
   When returning to the Administration page I want to see my last opened tab
 

@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A two column layout for the boost_app_tech theme.
+ * A two column layout for the boost_eng_app_tech theme.
  *
- * @package   theme_boost_app_tech
+ * @package   theme_boost_eng_app_tech
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -83,5 +83,5 @@ $templatecontext = [
 $nav = $PAGE->flatnav;
 $templatecontext['flatnavigation'] = $nav;
 $templatecontext['firstcollectionlabel'] = $nav->get_collectionlabel();
-echo $OUTPUT->render_from_template('theme_boost_app_tech/columns2', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost_eng_app_tech/columns2', $templatecontext);
 

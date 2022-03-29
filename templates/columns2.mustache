@@ -15,11 +15,11 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost_app_tech/columns2
+    @template theme_boost_eng_app_tech/columns2
 
     Admin time setting template.
 
-    boost_app_tech 2 column layout template.
+    boost_eng_app_tech 2 column layout template.
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -48,7 +48,7 @@
         "hasregionmainsettingsmenu": false
     }
 }}
-{{> theme_boost_app_tech/head }}
+{{> theme_boost_eng_app_tech/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -57,10 +57,10 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{> theme_boost_app_tech/navbar }}
-    {{> theme_boost_app_tech/nav-drawer }}
+    {{> theme_boost_eng_app_tech/navbar }}
+    {{> theme_boost_eng_app_tech/nav-drawer }}
 
-    <div id="page" class="container-fluid d-print-block">
+    <div id="page" name="3col" class="container-fluid d-print-block">
         {{{ output.full_header }}}
                 <!-- ADDITIONAL BLOCK START -->
                 {{#hastopfullwidth}}
@@ -113,20 +113,20 @@
         </div>
     </div>
     {{{ output.standard_after_main_region_html }}}
-    {{> theme_boost_app_tech/footer }}
+    {{> theme_boost_eng_app_tech/footer }}
 </div>
 
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost_app_tech/loader');
-require(['theme_boost_app_tech/loader'], function() {
-    M.util.js_complete('theme_boost_app_tech/loader');
+M.util.js_pending('theme_boost_eng_app_tech/loader');
+require(['theme_boost_eng_app_tech/loader'], function() {
+    M.util.js_complete('theme_boost_eng_app_tech/loader');
 });
 
-M.util.js_pending('theme_boost_app_tech/drawer');
-require(['theme_boost_app_tech/drawer'], function(drawer) {
+M.util.js_pending('theme_boost_eng_app_tech/drawer');
+require(['theme_boost_eng_app_tech/drawer'], function(drawer) {
     drawer.init();
-    M.util.js_complete('theme_boost_app_tech/drawer');
+    M.util.js_complete('theme_boost_eng_app_tech/drawer');
 });
 {{/js}}

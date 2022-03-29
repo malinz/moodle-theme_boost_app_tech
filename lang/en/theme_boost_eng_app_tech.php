@@ -17,7 +17,7 @@
 /**
  * Language file.
  *
- * @package   theme_boost_app_tech
+ * @package   theme_boost_eng_app_tech
  * @copyright 2016 Frédéric Massart
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,17 +31,17 @@ $string['brandcolor'] = 'Brand colour';
 $string['brandcolor_desc'] = 'The accent colour.';
 $string['bootswatch'] = 'Bootswatch';
 $string['bootswatch_desc'] = 'A bootswatch is a set of Bootstrap variables and css to style Bootstrap';
-$string['choosereadme'] = 'Applied Technology Theme is a modern highly-customisable theme. This theme is intended to be used directly, or as a parent theme when creating new themes utilising Bootstrap 4.';
+$string['choosereadme'] = 'boost_eng_app_tech is a modern highly-customisable theme. This theme is intended to be used directly, or as a parent theme when creating new themes utilising Bootstrap 4.';
 $string['currentinparentheses'] = '(current)';
-$string['configtitle'] = 'Applied Technology Theme';
+$string['configtitle'] = 'Eng Applied Tech Theme';
 $string['generalsettings'] = 'General settings';
 $string['nobootswatch'] = 'None';
-$string['pluginname'] = 'Applied Technology Theme';
+$string['pluginname'] = 'Eng Applied Tech Theme';
 $string['presetfiles'] = 'Additional theme preset files';
-$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/boost_app_tech_Presets">boost_app_tech presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/boost_app_tech">Presets repository</a> for presets that others have shared.';
+$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/boost_eng_app_tech_Presets">boost_eng_app_tech presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/boost_eng_app_tech">Presets repository</a> for presets that others have shared.';
 $string['preset'] = 'Theme preset';
 $string['preset_desc'] = 'Pick a preset to broadly change the look of the theme.';
-$string['privacy:metadata'] = 'The boost_app_tech theme does not store any personal data about any user.';
+$string['privacy:metadata'] = 'The boost_eng_app_tech theme does not store any personal data about any user.';
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Use this field to provide SCSS or CSS code which will be injected at the end of the style sheet.';
 $string['rawscsspre'] = 'Raw initial SCSS';
@@ -67,12 +67,7 @@ $string['region-lower-navdrawer'] = 'Nav-Drawer Bottom';
 $string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
-
-$string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
-$string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
-$string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
 $string['totop'] = 'Go to top';
-
 
 // My Courses custom menu dropdown
 $string['mycourses'] = 'My Courses';
